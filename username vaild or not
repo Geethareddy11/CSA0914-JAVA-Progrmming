@@ -1,0 +1,13 @@
+package Java_programs;
+public class valid {
+	public static void main(String[] args) {
+	
+	String s1="hello";
+	String s2="hello";
+	if(s1==s2)
+	 System.out.print("user name valid");
+	else
+	 System.out.print("user name Invalid");
+	}
+
+}
