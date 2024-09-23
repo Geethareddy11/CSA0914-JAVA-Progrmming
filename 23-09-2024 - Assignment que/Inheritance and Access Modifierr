@@ -1,0 +1,29 @@
+class Employee {
+    private int id;
+    protected String name;
+    public double salary;
+    public Employee(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+    public void displayEmployeeInfo() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Salary: " + salary);
+    }
+}
+class Manager extends Employee {
+    public Manager(int id, String name, double salary) {
+        super(id, name, salary);  
+    }
+    public void displayManagerInfo() {
+        System.out.println("Name: " + name);   
+        System.out.println("Salary: " + salary); 
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Manager manager = new Manager(101, "Alice", 75000.0);
+        manager.displayManagerInfo();  
+        manager.displayEmployeeInfo(); 
+    }
+}
